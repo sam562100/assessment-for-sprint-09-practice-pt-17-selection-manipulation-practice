@@ -7,7 +7,19 @@ the HTML or CSS files
 // Select the first square using its id. Add a button inside the square with the
 // number 1 on it.
 
-// Your code here
+const squareOne = document.getElementById("problem-one")
+
+squareOne.innerText = ""
+
+const button = document.createElement('button')
+
+button.innerText = "1"
+
+squareOne.appendChild(button)
+
+
+
+
 
 
 // Problem Two
@@ -19,7 +31,7 @@ the HTML or CSS files
 
 // Problem 3
 // Select all of the squares that have a class of "plus", and double their
-// width. Increase the size of the font as well. 
+// width. Increase the size of the font as well.
 // HINT: Check the CSS file or use your Dev Tools to find the original width and
 // font-size, and then double those sizes.
 
