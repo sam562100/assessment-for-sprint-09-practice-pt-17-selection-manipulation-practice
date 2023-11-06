@@ -26,7 +26,8 @@ squareOne.appendChild(button)
 // Select the second square using class names. Change the background color to
 // orange, the text color white, and the border to 5px dashed black.
 
-// Your code here
+let squareTwo = document.querySelector('.two')
+squareTwo.style = 'border: 5px dashed black; color: white; background-color: orange'
 
 
 // Problem 3
@@ -35,14 +36,21 @@ squareOne.appendChild(button)
 // HINT: Check the CSS file or use your Dev Tools to find the original width and
 // font-size, and then double those sizes.
 
-// Your code here
+let plus = document.querySelectorAll(".square.plus")
+plus.forEach(styler => {
+    styler.style.width = '100px'
+    styler.style['font-size'] = '60px'
+})
 
 // Problem 4
 // Select the fourth box. Give it an id of "problem-four". Remove the class of
 // "square" and add a class "round". As a result, the item should turn a
 // different color and shape due to code in the css file.
 
-// Your code here
+let squareFour = document.querySelector('.four')
+squareFour.classList.remove('square')
+squareFour.classList.add('round')
+squareFour.id = 'problem-four'
 
 // Problem 5
 // Use JavaScript to remove boxes 5, 6, and 7. Can you remove multiple boxes at
@@ -52,4 +60,11 @@ squareOne.appendChild(button)
 // NOTE: There are many possible approaches to this. Try 2-3 approaches and
 // evaluate which one achieves the goal in the best way.
 
-// Your code here
+//1
+let boxes = document.querySelectorAll(".square")
+console.log(boxes)
+boxes[3].remove()
+boxes[4].remove()
+boxes[5].remove()
+
+
